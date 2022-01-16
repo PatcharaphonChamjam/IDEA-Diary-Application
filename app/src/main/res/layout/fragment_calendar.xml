@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_calendar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorwhite"
+    tools:context="com.diary.deardiary.Activity.Fragment_Calendar">
+    
+
+    <TextView
+        android:id="@+id/caltext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+    <FrameLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cal_container"
+
+       />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvCal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/caltext"
+        >
+
+
+    </android.support.v7.widget.RecyclerView>
+    
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/FloatBTcal"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/ic_add"
+        android:layout_margin="20dp"
+        />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite"
+
+    tools:context="com.diary.deardiary.Activity.ShowDiaryNopicActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+        <TextView
+            android:id="@+id/dinopicID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Editreview"
+            android:visibility="invisible"
+            />
+
+
+        <TextView
+            android:id="@+id/TxtStoryDinopic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title's diary"
+            android:textStyle="bold"
+            android:layout_below="@+id/dinopicID"
+            android:textSize="25dp"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/TxtDateDinopic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 January 2019"
+            android:layout_below="@+id/TxtStoryDinopic"
+            android:textSize="15dp"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/TxtTimeDinopic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Time :"
+            android:layout_below="@+id/TxtStoryDinopic"
+            android:layout_toEndOf="@+id/TxtDateDinopic"
+            android:textSize="15dp"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/TxtTime2Dinopic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 10:10:10"
+            android:layout_below="@+id/TxtStoryDinopic"
+            android:layout_toEndOf="@+id/TxtTimeDinopic"
+            android:textSize="15dp"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:layout_marginTop="10dp"
+            />
+
+            />
+
+        <TextView
+            android:id="@+id/TxtDinopic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TxtTime2Dinopic"
+            android:text="      Once upon a time."
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            />
+
+
+
+    </RelativeLayout>
+</ScrollView>

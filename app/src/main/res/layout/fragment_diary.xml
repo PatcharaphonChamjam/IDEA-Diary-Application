@@ -1,0 +1,121 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorwhite"
+    tools:context="com.diary.deardiary.Activity.Fragment_Diary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+
+    <TextView
+        android:id="@+id/userid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="userid"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"
+        />
+
+        <TextView
+            android:id="@+id/Txtda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:visibility="invisible"
+
+            />
+    <TextView
+        android:id="@+id/TxtStory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title's diary "
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        />
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/EdtStoryName2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Write your story's name in 200 characters"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        app:bootstrapSize="lg"
+        app:roundedCorners="true"
+        android:layout_below="@+id/TxtStory"
+        android:layout_alignParentStart="true" />
+
+
+
+    <Button
+        android:id="@+id/BtnStoryPic2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:drawableTop="@drawable/ic_add_a_photo2"
+        android:padding="10dp"
+        android:layout_below="@+id/EdtStoryName2"
+        android:text="Add Picture"
+        android:textStyle="bold"
+        android:textColor="@color/colorwhite"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ovalbutton"
+
+        />
+
+
+
+
+        <TextView
+            android:id="@+id/Txtdiary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Story's diary"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/BtnStoryPic2"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            />
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/EdtStoryData2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:hint= "What's on your mind?"
+            android:gravity="left"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/Txtdiary"
+
+            app:bootstrapSize="lg"
+            app:roundedCorners="true"
+            />
+
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/SaveStory2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/feather"
+        app:backgroundTint="@color/colorBackgtheme"
+        />
+    </RelativeLayout>
+
+
+</ScrollView>

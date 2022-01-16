@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite"
+    tools:context="com.diary.deardiary.Activity.ShowDiaryPicActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+    <TextView
+        android:id="@+id/diID4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Editreview"
+        android:visibility="invisible"
+        />
+        <TextView
+            android:id="@+id/ip"
+            android:text="ip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:visibility="invisible"
+            />
+
+    <TextView
+        android:id="@+id/picname4"
+        android:text="picname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"
+        />
+
+        <TextView
+            android:id="@+id/TxtStory3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title's diary"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textSize="25dp"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+
+            />
+
+        <TextView
+            android:id="@+id/TxtDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 January 2019"
+            android:layout_below="@+id/TxtStory3"
+            android:textSize="15dp"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/TxtTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Time :"
+            android:layout_below="@+id/TxtStory3"
+            android:layout_toEndOf="@+id/TxtDate"
+            android:textSize="15dp"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/TxtTime2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 10:10:10"
+            android:layout_below="@+id/TxtStory3"
+            android:layout_toEndOf="@+id/TxtTime"
+            android:textSize="15dp"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:layout_marginTop="10dp"
+            />
+
+
+        <ImageView
+            android:id="@+id/ImgDiary3"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/TxtDate"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/Txtdiary3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ImgDiary3"
+            android:text="      Once upon a time."
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            />
+
+
+
+    </RelativeLayout>
+</ScrollView>

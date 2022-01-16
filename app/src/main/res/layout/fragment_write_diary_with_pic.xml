@@ -1,0 +1,157 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorwhite"
+    tools:context="com.diary.deardiary.Activity.WriteDiaryWithPic">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+
+
+    <TextView
+        android:id="@+id/diID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blank Fragment"
+        android:visibility="invisible"
+        />
+    <TextView
+        android:id="@+id/picname"
+        android:text="picname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible"/>
+
+
+        <TextView
+            android:id="@+id/TxtStory2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title's diary "
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+
+            />
+
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/Edttitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="text"
+        android:hint="Write your story's name in 200 characters"
+        android:background="@color/colorLightpink"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/TxtStory2"
+        android:paddingLeft="10dp"
+        app:bootstrapSize="lg"
+        app:roundedCorners="true"
+        />
+
+
+    <Button
+        android:id="@+id/Btnpicdi"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:drawableTop="@drawable/ic_add_a_photo2"
+        android:padding="10dp"
+        android:layout_below="@+id/Edttitle"
+        android:text="Add Picture"
+        android:textStyle="bold"
+        android:textColor="@color/colorwhite"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ovalbutton"
+        android:clickable="true"
+        android:visibility="gone"
+    />
+
+        <TextView
+            android:id="@+id/Txtpic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Picture"
+            android:layout_below="@+id/Edttitle"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:layout_marginTop="15dp"
+            />
+
+
+        <ImageView
+            android:id="@+id/ImgDiary"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/Txtpic"
+            android:layout_marginTop="15dp"
+            android:scaleType="centerCrop"
+
+            />
+
+        <ImageButton
+            android:id="@+id/Btndelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/ImgDiary"
+            android:layout_below="@+id/Txtpic"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ic_action_cancel"
+
+            />
+
+
+        <TextView
+            android:id="@+id/Txtdiary2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Story's diary"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/ImgDiary"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            />
+
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/EdtDiary"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/Txtdiary2"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:hint="What's on your mind?"
+            android:padding="10dp"
+            app:bootstrapSize="lg"
+            app:roundedCorners="true"
+
+            />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/SaveDiary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_save"
+        app:backgroundTint="@color/colorbuttonadd"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        />
+    </RelativeLayout>
+
+</ScrollView>

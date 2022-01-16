@@ -1,0 +1,79 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorblack</item>
+        <item name="colorPrimaryDark">@color/colorLightcoral</item>
+        <item name="colorAccent">@color/colorSALMON</item>
+
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="CaldroidDefaultDark" parent="CaldroidDefault">
+        <item name="styleCaldroidViewLayout">@style/CaldroidDefaultDarkCalendarViewLayout</item>
+        <item name="styleCaldroidMonthName">@style/CaldroidDefaultDarkMonthName</item>
+        <item name="styleCaldroidNormalCell">@style/CaldroidDefaultDarkNormalCell</item>
+        <item name="styleCaldroidSquareCell">@style/CaldroidDefaultDarkSquareCell</item>
+        <item name="styleCaldroidGridView">@style/CaldroidDefaultDarkGridView</item>
+    </style>
+
+    <style name="CaldroidDefaultDarkCalendarViewLayout">
+        <item name="android:background">@android:color/black</item>
+    </style>
+
+    <style name="CaldroidDefaultDarkMonthName" parent="CaldroidDefaultMonthName">
+        <item name="android:textColor">@color/caldroid_white</item>
+    </style>
+
+    <style name="CaldroidDefaultDarkGridView" parent="CaldroidDefaultGridView">
+        <!--<color cell table>-->
+        <item name="android:background">@color/caldroid_transparent</item>
+    </style>
+
+    <style name="CaldroidDefaultDarkCell" parent="CaldroidDefaultCell">
+        <item name="android:textColor">@color/cell_text_color_dark</item>
+        <item name="android:background">@drawable/cell_bg_dark</item>
+    </style>
+
+    <style name="CaldroidDefaultDarkNormalCell" parent="CaldroidDefaultDarkCell">
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="CaldroidDefaultDarkSquareCell" parent="CaldroidDefaultDarkCell" />
+
+    <!--<PINK THEME>-->
+    <style name="CaldroidDefaultPINK" parent="CaldroidDefault">
+        <item name="styleCaldroidSquareCell">@style/CaldroidDefaultPinkSquareCell</item>
+        <item name="styleCaldroidGridView">@style/CaldroidDefaultPinkGridView</item>
+        <item name="styleCaldroidWeekdayView">@style/CaldroidDefaultPinkWeekday</item>
+
+    </style>
+
+    <style name="CaldroidDefaultPinkSquareCell" parent="CaldroidDefaultCell">
+        <item name="android:textColor">@drawable/cell_text_pink</item>
+        <item name="android:background">@drawable/cell_bg_pink</item>
+    </style>
+
+    <style name="CaldroidDefaultPinkGridView" parent="CaldroidDefaultGridView">
+        <!--<color cell table>-->
+        <item name="android:background">@color/caldroid_lighter_gray</item>
+    </style>
+
+    <style name="CaldroidDefaultPinkWeekday" parent="CaldroidDefaultMonthName">
+        <item name="android:textColor">@color/caldroid_middle_gray</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+</resources>

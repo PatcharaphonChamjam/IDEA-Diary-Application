@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite"
+    android:orientation="vertical"
+    tools:context="com.diary.deardiary.Activity.MainActivity">
+
+
+
+    <ImageView
+        android:id="@+id/imglogo"
+        android:layout_marginTop="31dp"
+        android:background="@drawable/idealogo"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/ovalstroke"
+        android:text="LOGIN"
+        android:fontFamily="serif"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorblack"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_above="@+id/btnregis"
+        android:layout_marginBottom="20dp"
+        />
+
+    <Button
+        android:id="@+id/btnregis"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/ovalstroke"
+        android:text="REGISTER"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@color/colorblack"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        />
+
+</RelativeLayout>

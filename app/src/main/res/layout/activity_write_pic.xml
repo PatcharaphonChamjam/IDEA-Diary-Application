@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.diary.deardiary.Activity.WritePicActivity">
+
+    <TextView
+        android:id="@+id/TxtWritepicID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/TxtWritepicTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:visibility="invisible"
+        android:layout_toEndOf="@id/TxtWritepicID"
+        />
+
+    <TextView
+        android:id="@+id/TxtWritepicOldtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OldText"
+        android:visibility="invisible"
+        android:layout_toEndOf="@id/TxtWritepicID"
+        />
+
+    <TextView
+        android:id="@+id/TxtWritepicPic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="picname"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"
+        />
+
+    <EditText
+        android:id="@+id/EdtWritepic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:hint="What's on your mind ?  Write down at least 20 characters."
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:backgroundTint="@color/colorwhite"
+        />
+
+</RelativeLayout>

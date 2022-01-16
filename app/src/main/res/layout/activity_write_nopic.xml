@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite"
+    tools:context="com.diary.deardiary.Activity.WriteNopicActivity"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/TxtWritenopicID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID"
+        android:visibility="invisible"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:id="@+id/TxtWritenopicTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:visibility="invisible"
+
+        />
+
+    <TextView
+        android:id="@+id/TxtWritenopicOldtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oldtext"
+        android:visibility="invisible"
+
+        />
+
+    <EditText
+        android:id="@+id/EdtNopic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:hint="What's on your mind ?  Write down at least 20 characters."
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:backgroundTint="@color/colorwhite"
+        />
+
+
+
+</RelativeLayout>

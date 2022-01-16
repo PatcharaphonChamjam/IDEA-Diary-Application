@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layclick"
+    android:background="@color/caldroid_white"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/relaCal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/bgrow">
+        <TextView
+            android:id="@+id/idreviewCal"
+            android:text="IDREVIEW"
+            android:layout_alignParentRight="true"
+            android:paddingRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:id="@+id/idpicCal"
+            android:text="IDPIC"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="22dp"
+            android:layout_width="wrap_content"
+            android:visibility="invisible"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/numdayCal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:text="10"
+            android:textSize="23dp"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            />
+
+        <TextView
+            android:id="@+id/textdayCal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fri"
+            android:textSize="17dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/numdayCal"
+
+
+            />
+
+
+        <TextView
+            android:id="@+id/titleCal"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/numdayCal"
+            android:text="Title Calendar"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            />
+        <LinearLayout
+            android:id="@+id/wrap"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleCal"
+            android:layout_alignStart="@+id/titleCal"
+            android:layout_marginTop="10dp"
+            >
+        <ImageView
+            android:id="@+id/clockCal"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/time"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical"
+            />
+        <TextView
+            android:id="@+id/dateCal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Datetime"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/picdi"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignTop="@+id/titleCal"
+            android:layout_toStartOf="@+id/nextCal" />
+        <ImageView
+            android:id="@+id/nextCal"
+            android:src = "@drawable/ic_navigate_next"
+            android:layout_width="30dp"
+            android:layout_height="100dp"
+           android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorLightcoral">#E77471</color>
+    <color name="colorLightpink">#80ffebee</color>
+    <color name="colorSALMON">#FA8072</color>
+    <color name="colorBLANCHEDALMOND">#FFEBCD</color>
+    <color name="colorLEMONCHIFFON">#FFFACD</color>
+    <color name="colorDARKKHAKI">#BDB76B</color>
+    <color name="colorDarkBG">#283747</color>
+    <color name="colorblack">#000000</color>
+    <color name="colorPINK">#eb7d7e</color>
+    <color name="colorEdittextBG">#ded7d7</color>
+    <color name="colorPinklight2">#E065BB</color>
+    <color name="colorPinklight3">#8C003D</color>
+    <color name="colorbuttonadd">#25B6D2</color>
+    <color name="colorEdittext">#908d8d</color>
+    <color name="colorBackgtheme">#ec576c</color>
+    <color name="colorButtonLogin">#E74C3C</color>
+    <color name="colorwhite">#ffffff</color>
+    <color name="coloropacitywhite">#00ffffff</color>
+    <color name="colorgray">#f7f7f9</color>
+
+</resources>

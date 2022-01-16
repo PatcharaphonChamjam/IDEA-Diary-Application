@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite"
+    tools:context="com.diary.deardiary.Activity.EditDiaryNopicActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+    <TextView
+        android:id="@+id/EdtID2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Editreview"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/EdtuserID2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="userID"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/Txtpicname2"
+        android:text="picname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/TxtpicEd2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title's diary "
+        android:textSize="20dp"
+
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_marginTop="5dp"
+        />
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/EdtpicEdtitle2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="text"
+        android:hint="Write your story's name in 200 characters"
+        android:background="@color/colorLightpink"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/TxtpicEd2"
+        app:bootstrapSize="lg"
+        app:roundedCorners="true"
+        />
+
+
+
+    <TextView
+        android:id="@+id/Txtpicdiary2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Story's diary"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/EdtpicEdtitle2"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        />
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/EdtpicEdDiary2"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Txtpicdiary2"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:hint="What's on your mind?"
+        android:padding="10dp"
+        app:bootstrapSize="lg"
+        android:focusable="false"
+        app:roundedCorners="true"
+        />
+    </RelativeLayout>
+</ScrollView>

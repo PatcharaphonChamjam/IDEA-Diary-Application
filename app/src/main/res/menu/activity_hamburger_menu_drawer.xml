@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Main"
+            android:icon="@drawable/menu_main"
+            android:title="Write Diary" />
+        <item
+            android:id="@+id/nav_calenadr"
+            android:icon="@drawable/menu_calendar"
+            android:title="Calendar" />
+
+    </group>
+
+    <item android:title="Settings">
+        <menu>
+
+
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/menu_setting"
+                android:title="Change Password" />
+            <item
+                android:id="@+id/nav_Logout"
+                android:icon="@drawable/menu_logout"
+                android:title="Log out" />
+        </menu>
+    </item>
+
+</menu>

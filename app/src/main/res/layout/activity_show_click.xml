@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorwhite"
+    tools:context="com.diary.deardiary.Activity.ShowClickActivity">
+
+    <TextView
+        android:id="@+id/TextDateSC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="showDate"
+        android:visibility="invisible"
+        android:layout_marginLeft="10dp"/>
+
+
+    <TextView
+        android:id="@+id/TextUserSC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="showUserID"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"
+        android:layout_marginLeft="10dp"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/Showcal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_below="@id/TextUserSC"
+        android:layout_marginTop="3dp"></android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

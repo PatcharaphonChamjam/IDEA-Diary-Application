@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite"
+    android:orientation="vertical"
+    tools:context="com.diary.deardiary.Activity.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1" />
+
+        <TextView
+
+            android:id="@+id/Txtlog"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:text="LOGIN"
+            android:fontFamily="serif"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorblack"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@drawable/logobg"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/Etloguser"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/edittextbg"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_vertical"
+            android:hint="Username"
+            android:paddingLeft="15dp"
+            android:textColor="@color/colorblack"
+            android:textColorHint="@color/colorEdittext"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/Etlogpass"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/edittextbg"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_vertical"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp"
+            android:textColor="@color/colorblack"
+            android:textColorHint="@color/colorEdittext"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/Showpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="SHOW PASSWORD"
+            android:textColorHint="@color/colorblack"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/Btnlog"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bgcontinue"
+            android:fontFamily="serif"
+            android:text="CONTINUE"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/Linearlog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/Txtlogregis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DON'T HAVE AN ACCOUT?"
+                android:textColor="@color/colorblack"
+                android:textSize="18dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Txtlognext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toEndOf="@+id/Txtlogregis"
+                android:fontFamily="sans-serif-condensed"
+                android:text="REGISTER"
+
+                android:textColor="@color/colorblack"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
